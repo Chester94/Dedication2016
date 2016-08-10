@@ -1,0 +1,58 @@
+\usepackage[english, russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{fullpage}
+\usepackage{indentfirst} % Первый абзац в разделе тоже с красной строки
+%\usepackage{cmap} % для кодировки шрифтов в pdf (чтобы не было крокозябры при копировании из pdf )
+\usepackage{graphicx} % для вставки картинок
+\graphicspath{{res/}} % Путь к папке с картинками
+\sloppy % Включение переноса слов в тексте
+
+\usepackage{color}
+
+\usepackage{hyperref} % Для добавления ссылок в тесте
+
+% Настройка цветов для ссылок
+\hypersetup{
+colorlinks = true,
+linkcolor = black,
+pagecolor = black,
+urlcolor = blue, 
+citecolor = black
+}
+
+\usepackage[labelfont=bf, labelsep=space]{caption} % Делаем надписи "Рис.1" под рисунками жирными и без двоеточия.
+
+\usepackage[top=20mm, bottom=20mm, left=30mm, right=20mm
+, nohead % Убрать расстояние для верхних колонтикулов
+%, nofoot % Убрать расстояние для нижних колонтикулов
+]
+{geometry} % Размер полей у старницы
+
+\setlength{\parindent}{1.25cm} % Размер интервала для абзацев 
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{caption} % подписи к рисункам в русской типографской традиции
+\DeclareCaptionFormat{GOSTtable}{#2#1\\#3\vspace*{-\baselineskip}}
+\DeclareCaptionLabelSeparator{fill}{\hfill}
+\DeclareCaptionLabelFormat{fullparents}{\bothIfFirst{#1}{~}#2}
+
+% Начинать каждую главу с новой страницы
+%\usepackage{titlesec}
+%\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{xcolor}
+
+\newcommand{\newsection}[2]{
+	\cleardoublepage
+	\phantomsection
+	\section*{#1}
+	\addcontentsline{toc}{section}{#2}
+}
+
+\newcommand{\newsubsection}[2]{
+	%\newpage
+	\phantomsection
+	\subsection*{#1}
+	\addcontentsline{toc}{subsection}{#2}
+}
