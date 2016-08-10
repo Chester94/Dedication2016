@@ -1,17 +1,17 @@
 \usepackage[english, russian]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{fullpage}
-\usepackage{indentfirst} % Первый абзац в разделе тоже с красной строки
-%\usepackage{cmap} % для кодировки шрифтов в pdf (чтобы не было крокозябры при копировании из pdf )
-\usepackage{graphicx} % для вставки картинок
-\graphicspath{{res/}} % Путь к папке с картинками
-\sloppy % Включение переноса слов в тексте
+\usepackage{indentfirst} % РџРµСЂРІС‹Р№ Р°Р±Р·Р°С† РІ СЂР°Р·РґРµР»Рµ С‚РѕР¶Рµ СЃ РєСЂР°СЃРЅРѕР№ СЃС‚СЂРѕРєРё
+%\usepackage{cmap} % РґР»СЏ РєРѕРґРёСЂРѕРІРєРё С€СЂРёС„С‚РѕРІ РІ pdf (С‡С‚РѕР±С‹ РЅРµ Р±С‹Р»Рѕ РєСЂРѕРєРѕР·СЏР±СЂС‹ РїСЂРё РєРѕРїРёСЂРѕРІР°РЅРёРё РёР· pdf )
+\usepackage{graphicx} % РґР»СЏ РІСЃС‚Р°РІРєРё РєР°СЂС‚РёРЅРѕРє
+\graphicspath{{res/}} % РџСѓС‚СЊ Рє РїР°РїРєРµ СЃ РєР°СЂС‚РёРЅРєР°РјРё
+\sloppy % Р’РєР»СЋС‡РµРЅРёРµ РїРµСЂРµРЅРѕСЃР° СЃР»РѕРІ РІ С‚РµРєСЃС‚Рµ
 
 \usepackage{color}
 
-\usepackage{hyperref} % Для добавления ссылок в тесте
+\usepackage{hyperref} % Р”Р»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃСЃС‹Р»РѕРє РІ С‚РµСЃС‚Рµ
 
-% Настройка цветов для ссылок
+% РќР°СЃС‚СЂРѕР№РєР° С†РІРµС‚РѕРІ РґР»СЏ СЃСЃС‹Р»РѕРє
 \hypersetup{
 colorlinks = true,
 linkcolor = black,
@@ -20,24 +20,24 @@ urlcolor = blue,
 citecolor = black
 }
 
-\usepackage[labelfont=bf, labelsep=space]{caption} % Делаем надписи "Рис.1" под рисунками жирными и без двоеточия.
+\usepackage[labelfont=bf, labelsep=space]{caption} % Р”РµР»Р°РµРј РЅР°РґРїРёСЃРё "Р РёСЃ.1" РїРѕРґ СЂРёСЃСѓРЅРєР°РјРё Р¶РёСЂРЅС‹РјРё Рё Р±РµР· РґРІРѕРµС‚РѕС‡РёСЏ.
 
 \usepackage[top=20mm, bottom=20mm, left=30mm, right=20mm
-, nohead % Убрать расстояние для верхних колонтикулов
-%, nofoot % Убрать расстояние для нижних колонтикулов
+, nohead % РЈР±СЂР°С‚СЊ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґР»СЏ РІРµСЂС…РЅРёС… РєРѕР»РѕРЅС‚РёРєСѓР»РѕРІ
+%, nofoot % РЈР±СЂР°С‚СЊ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґР»СЏ РЅРёР¶РЅРёС… РєРѕР»РѕРЅС‚РёРєСѓР»РѕРІ
 ]
-{geometry} % Размер полей у старницы
+{geometry} % Р Р°Р·РјРµСЂ РїРѕР»РµР№ Сѓ СЃС‚Р°СЂРЅРёС†С‹
 
-\setlength{\parindent}{1.25cm} % Размер интервала для абзацев 
+\setlength{\parindent}{1.25cm} % Р Р°Р·РјРµСЂ РёРЅС‚РµСЂРІР°Р»Р° РґР»СЏ Р°Р±Р·Р°С†РµРІ 
 \usepackage{setspace}
 \onehalfspacing
 
-\usepackage{caption} % подписи к рисункам в русской типографской традиции
+\usepackage{caption} % РїРѕРґРїРёСЃРё Рє СЂРёСЃСѓРЅРєР°Рј РІ СЂСѓСЃСЃРєРѕР№ С‚РёРїРѕРіСЂР°С„СЃРєРѕР№ С‚СЂР°РґРёС†РёРё
 \DeclareCaptionFormat{GOSTtable}{#2#1\\#3\vspace*{-\baselineskip}}
 \DeclareCaptionLabelSeparator{fill}{\hfill}
 \DeclareCaptionLabelFormat{fullparents}{\bothIfFirst{#1}{~}#2}
 
-% Начинать каждую главу с новой страницы
+% РќР°С‡РёРЅР°С‚СЊ РєР°Р¶РґСѓСЋ РіР»Р°РІСѓ СЃ РЅРѕРІРѕР№ СЃС‚СЂР°РЅРёС†С‹
 %\usepackage{titlesec}
 %\newcommand{\sectionbreak}{\clearpage}
 
