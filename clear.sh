@@ -18,3 +18,10 @@ rm -rf ./schedule/*.out
 rm -rf ./schedule/*.pdf
 rm -rf ./schedule/*.gz
 rm -rf ./schedule/*.toc
+
+rm -rf ./basicDefine/*.log
+rm -rf ./basicDefine/*.aux
+rm -rf ./basicDefine/*.out
+rm -rf ./basicDefine/*.pdf
+rm -rf ./basicDefine/*.gz
+rm -rf ./basicDefine/*.toc
