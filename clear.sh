@@ -25,3 +25,10 @@ rm -rf ./basicDefine/*.out
 rm -rf ./basicDefine/*.pdf
 rm -rf ./basicDefine/*.gz
 rm -rf ./basicDefine/*.toc
+
+rm -rf ./organizers/*.log
+rm -rf ./organizers/*.aux
+rm -rf ./organizers/*.out
+rm -rf ./organizers/*.pdf
+rm -rf ./organizers/*.gz
+rm -rf ./organizers/*.toc
