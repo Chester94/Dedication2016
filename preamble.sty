@@ -56,3 +56,6 @@ citecolor = black
 	\subsection*{#1}
 	\addcontentsline{toc}{subsection}{#2}
 }
+
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{-3pt}\olditem}
