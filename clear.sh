@@ -1,34 +1,22 @@
-rm -rf ./*.log
-rm -rf ./*.aux
-rm -rf ./*.out
-rm -rf ./*.pdf
-rm -rf ./*.gz
-rm -rf ./*.toc
+#!/bin/bash 
 
-rm -rf ./scenario/*.log
-rm -rf ./scenario/*.aux
-rm -rf ./scenario/*.out
-rm -rf ./scenario/*.pdf
-rm -rf ./scenario/*.gz
-rm -rf ./scenario/*.toc
+function clean {
+    cleanFolder
+    for i in $( find . -type d ! -wholename "."| grep -v ".*\.git.*" | cut -d '/' -f2 ); do
+        cd $i
+        clean
+        cd ..
+    done
+}
 
-rm -rf ./schedule/*.log
-rm -rf ./schedule/*.aux
-rm -rf ./schedule/*.out
-rm -rf ./schedule/*.pdf
-rm -rf ./schedule/*.gz
-rm -rf ./schedule/*.toc
+function cleanFolder {
+    rm -rf ./*.log
+    rm -rf ./*.aux
+    rm -rf ./*.out
+    rm -rf ./*.pdf
+    rm -rf ./*.gz
+    rm -rf ./*.toc
+    echo `pwd` cleared
+}
 
-rm -rf ./basicDefine/*.log
-rm -rf ./basicDefine/*.aux
-rm -rf ./basicDefine/*.out
-rm -rf ./basicDefine/*.pdf
-rm -rf ./basicDefine/*.gz
-rm -rf ./basicDefine/*.toc
-
-rm -rf ./organizers/*.log
-rm -rf ./organizers/*.aux
-rm -rf ./organizers/*.out
-rm -rf ./organizers/*.pdf
-rm -rf ./organizers/*.gz
-rm -rf ./organizers/*.toc
+clean
